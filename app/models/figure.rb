@@ -5,4 +5,6 @@ class Figure < ApplicationRecord
   has_many :order_items
 
   validates :character, :series, :name, :figure_type, :manufacturer, :description, :image, :price, presence: true
+
+  mount_uploader :image, FigureUploader
 end

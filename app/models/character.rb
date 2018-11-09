@@ -1,5 +1,5 @@
 class Character < ApplicationRecord
 	has_many :figures
 
-	validates name:, presence: true
+	validates :name, presence: true
 end

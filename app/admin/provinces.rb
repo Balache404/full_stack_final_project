@@ -1,4 +1,4 @@
-ActiveAdmin.register Figure do
+ActiveAdmin.register Province do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -11,7 +11,5 @@ ActiveAdmin.register Figure do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
-	permit_params :character_id, :series_id, :name, :figure_type, :manufacturer, :description, :image, :price
 
 end

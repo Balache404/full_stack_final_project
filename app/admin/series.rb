@@ -12,4 +12,6 @@ ActiveAdmin.register Series do
 #   permitted
 # end
 
+permit_params :name
+
 end

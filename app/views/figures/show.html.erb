@@ -1,2 +1,11 @@
-<h1>Figures#show</h1>
-<p>Find me in app/views/figures/show.html.erb</p>
+<h3><%= @figure.name %></h3>
+
+<div class="solo_figure">
+	<%= image_tag @figure.image.url %>
+	<p class="figure_info">
+		Type: <%= @figure.figure_type %> <br>
+		Manufacturer: <%= @figure.manufacturer %> <br><br>
+		<%= @figure.description %> <br><br>
+		<b> <%= number_to_currency(@figure.price) %> </b>
+	</p>
+</div>

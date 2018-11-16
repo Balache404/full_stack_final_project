@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <header>
+      <h1>JAAAC Store</h1>
+      <p><%= link_to 'Home', root_path%> | Figures by Series | Figures by Character</p>
+    </header>
     <%= yield %>
+    <footer>
+      <p>(C) JAAAC 2018</p>
+    </footer>
   </body>
 </html>

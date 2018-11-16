@@ -1,2 +1,9 @@
-<h1>Figures#index</h1>
-<p>Find me in app/views/figures/index.html.erb</p>
+<p>
+	<% @all_figures.each do | figure |  %>
+		<%= image_tag figure.image.url %> 
+		<br>
+		<b> <%= link_to figure.name, figure %> </b>
+		<br>
+		<%= number_to_currency(figure.price) %>
+	<% end %>
+</p>

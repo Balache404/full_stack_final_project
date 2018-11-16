@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'series/index'
+  get 'series/show'
   get 'characters/index'
   get 'characters/show'
   devise_for :admin_users, ActiveAdmin::Devise.config

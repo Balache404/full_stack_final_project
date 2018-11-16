@@ -1,9 +1,1 @@
-<p>
-	<% @all_figures.each do | figure |  %>
-		<%= image_tag figure.image.url %> 
-		<br>
-		<b> <%= link_to figure.name, figure %> </b>
-		<br>
-		<%= number_to_currency(figure.price) %>
-	<% end %>
-</p>
+<%= render partial: 'figure', collection: @all_figures %>

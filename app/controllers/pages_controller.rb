@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
   def about
-  	@about_page = Pages.find_by(name: 'About')
+  	@about_page = Page.find_by(name: 'About')
   end
 
   def contact
-  	@contact_page = Pages.find_by(name: 'Contact')
+  	@contact_page = Page.find_by(name: 'Contact')
   end
 end

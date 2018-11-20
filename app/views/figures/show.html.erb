@@ -5,7 +5,7 @@
 	<p class="figure_info">
 		Type: <%= @figure.figure_type %> <br>
 		Manufacturer: <%= @figure.manufacturer %> <br><br>
-		<%= @figure.description %> <br><br>
+		<%= simple_format(@figure.description, {}, wrapper_tag: "span") %> <br><br>
 		<b> <%= number_to_currency(@figure.price) %> </b>
 	</p>
 </div>

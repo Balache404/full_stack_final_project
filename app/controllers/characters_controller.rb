@@ -1,9 +1,9 @@
 class CharactersController < ApplicationController
   def index
-  	@all_charas = Characters.order(:name)
+  	@all_charas = Character.order(:name)
   end
 
   def show
-  	@character = Characters.find(params[:id])
+  	@character = Character.find(params[:id])
   end
 end

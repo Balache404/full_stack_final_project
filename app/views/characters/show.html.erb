@@ -1,2 +1,2 @@
-<h1>Characters#show</h1>
-<p>Find me in app/views/characters/show.html.erb</p>
+<%= render partial: '/figures/figure', collection: @figures = @character.figures.page(params[:page]).per(5) %>
+<%= paginate @figures %>

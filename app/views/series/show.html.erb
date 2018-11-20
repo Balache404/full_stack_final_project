@@ -1,1 +1,2 @@
-<%= render partial: '/figures/figure', collection: @series.figures %>
+<%= render partial: '/figures/figure', collection: @figures = @series.figures.page(params[:page]).per(5) %>
+<%= paginate @figures %>

@@ -1,2 +1,2 @@
-<h1>Search#results</h1>
-<p>Find me in app/views/search/results.html.erb</p>
+<%= render partial: '/figures/figure', collection: @figures = @results.page(params[:page]).per(5) %>
+<%= paginate @figures %>
